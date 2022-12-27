@@ -4,7 +4,15 @@
 
 @layer components {
   .btn {
-    @apply border-0 bg-[color:var(--dark-blue)] text-[color:var(--light-grey)] p-6 rounded-full h-0 w-0 flex justify-center items-center text-sm;
+    @apply border-0 bg-[color:var(--dark-blue)] text-[color:var(--light-grey)] p-6 rounded-full h-0 w-0 flex justify-center items-center text-sm hover:bg-[color:var(--light-grey)] hover:text-white active:bg-[color:var(--orange)] active:text-white cursor-pointer transition;
+  }
+
+  .btn--active {
+    @apply bg-[color:var(--orange)] text-white;
+  }
+
+  .desc {
+    @apply m-0 text-[color:var(--light-grey)] max-w-xs;
   }
 }
 
