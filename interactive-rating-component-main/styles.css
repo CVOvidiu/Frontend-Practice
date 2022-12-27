@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply border-0 bg-[color:var(--dark-blue)] text-[color:var(--light-grey)] p-6 rounded-full h-0 w-0 flex justify-center items-center text-sm;
+  }
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --dark-blue-card: hsl(214, 21%, 13%);
+  --very-dark-blue: hsl(214, 15%, 9%);
+  --very-dark-blue-2: hsl(216, 12%, 8%);
+}
