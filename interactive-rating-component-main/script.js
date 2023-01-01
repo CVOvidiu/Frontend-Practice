@@ -1,10 +1,13 @@
 const btns = document.querySelectorAll(".btn");
 const error = document.querySelector(".error");
+const textarea = document.querySelector("textarea");
 
 let rating = undefined;
 document.querySelector(".btns").addEventListener("click", (e) => {
   if (e.target.classList.contains("btns")) return;
   rating = e.target.innerHTML;
+
+  textarea.classList.remove("hidden");
 
   btns.forEach((btn) => {
     btn.classList.remove("btn--active");

@@ -16,6 +16,16 @@
   }
 }
 
+textarea::-webkit-scrollbar {
+  background-color: var(--dark-blue);
+  width: 15px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: var(--dark-blue-card);
+  border-radius: 50px;
+}
+
 :root {
   --orange: hsl(25, 97%, 53%);
   --light-grey: hsl(217, 12%, 63%);

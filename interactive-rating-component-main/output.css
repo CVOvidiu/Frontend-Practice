@@ -150,12 +150,13 @@
   margin-bottom: 0.5rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mt-8 {
@@ -168,6 +169,14 @@
 
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.box-border {
+  box-sizing: border-box;
 }
 
 .block {
@@ -190,12 +199,20 @@
   height: 0px;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .w-0 {
   width: 0px;
 }
 
 .w-full {
   width: 100%;
+}
+
+.resize-none {
+  resize: none;
 }
 
 .flex-col {
@@ -214,12 +231,20 @@
   justify-content: space-between;
 }
 
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border-0 {
@@ -260,6 +285,10 @@
   padding: 1.5rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -281,6 +310,11 @@
 
 .font-overpass {
   font-family: Overpass;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .tracking-widest {
@@ -309,6 +343,16 @@
   transition-duration: 150ms;
 }
 
+textarea::-webkit-scrollbar {
+  background-color: var(--dark-blue);
+  width: 15px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: var(--dark-blue-card);
+  border-radius: 50px;
+}
+
 :root {
   --orange: hsl(25, 97%, 53%);
   --light-grey: hsl(217, 12%, 63%);
@@ -326,6 +370,11 @@
 
 .hover\:text-\[color\:var\(--orange\)\]:hover {
   color: var(--orange);
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .active\:bg-slate-200:active {
