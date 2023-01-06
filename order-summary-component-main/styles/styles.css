@@ -1,0 +1,125 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(225deg, 100%, 94%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Display";
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  margin: 0 1em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  max-width: 400px;
+}
+.card .ilust-hero {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  display: flex;
+}
+
+.card--details {
+  text-align: center;
+  padding: 1.5em;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.card--details h1 {
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+  font-size: 1.5rem;
+  margin: 0;
+  margin-top: 0.5em;
+}
+.card--details p {
+  font-size: 1rem;
+  color: hsl(224deg, 23%, 55%);
+  margin: 1.5em 0.75em;
+  line-height: 1.75em;
+}
+.card--details .card--plan {
+  display: flex;
+  align-items: center;
+  background-color: hsl(225deg, 100%, 98%);
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+}
+.card--details .card--plan img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+.card--details .card--plan .plan--details span {
+  display: block;
+}
+.card--details .card--plan .plan--details .plan--title {
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+  margin-bottom: 0.1rem;
+}
+.card--details .card--plan .plan--details .plan--price {
+  color: hsl(224deg, 23%, 55%);
+}
+.card--details .card--plan .plan--change {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.card--details .card--plan .plan--change:hover {
+  text-decoration: none;
+  color: hsl(252deg, 53%, 63%);
+  cursor: pointer;
+}
+.card--details .payment,
+.card--details .cancel {
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+.card--details .payment {
+  border-radius: 0.75rem;
+  padding: 1rem 0;
+  width: 100%;
+  border: none;
+  margin-bottom: 0.5rem;
+  background-color: hsl(245deg, 75%, 52%);
+  color: white;
+  box-shadow: 0 10px 20px rgba(56, 41, 224, 0.25);
+  margin-bottom: 1.5rem;
+}
+.card--details .payment:hover {
+  background-color: hsl(252deg, 53%, 63%);
+  cursor: pointer;
+}
+.card--details .cancel {
+  color: hsl(224deg, 23%, 55%);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.card--details .cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+  cursor: pointer;
+}
+
+@media (min-width: 375px) {
+  :root {
+    font-size: 14px;
+  }
+  .card--details h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

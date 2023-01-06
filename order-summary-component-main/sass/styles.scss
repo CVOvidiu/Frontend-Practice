@@ -1,0 +1,145 @@
+@use "base";
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: base.$pale-blue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: base.$font-family;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  margin: 0 1em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  max-width: 400px;
+
+  .ilust-hero {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    display: flex;
+  }
+}
+
+.card--details {
+  text-align: center;
+  padding: 1.5em;
+  max-width: 300px;
+  margin: 0 auto;
+
+  h1 {
+    font-weight: 900;
+    color: base.$dark-blue;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 0.5em;
+  }
+
+  p {
+    font-size: 1rem;
+    color: base.$desaturated-blue;
+    margin: 1.5em 0.75em;
+    line-height: 1.75em;
+  }
+
+  .card--plan {
+    display: flex;
+    align-items: center;
+    background-color: base.$very-pale-blue;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+
+    img {
+      width: 3rem;
+      margin-right: 1rem;
+    }
+
+    .plan--details {
+      span {
+        display: block;
+      }
+
+      .plan--title {
+        font-weight: 900;
+        color: base.$dark-blue;
+        margin-bottom: 0.1rem;
+      }
+
+      .plan--price {
+        color: base.$desaturated-blue;
+      }
+    }
+
+    .plan--change {
+      margin-left: auto;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .plan--change:hover {
+      text-decoration: none;
+      color: base.$desaturated-purple;
+      cursor: pointer;
+    }
+  }
+
+  .payment,
+  .cancel {
+    font-weight: 900;
+    font-size: 0.9rem;
+  }
+
+  .payment {
+    border-radius: 0.75rem;
+    padding: 1rem 0;
+    width: 100%;
+    border: none;
+    margin-bottom: 0.5rem;
+    background-color: base.$bright-blue;
+    color: white;
+    box-shadow: 0 10px 20px rgba($color: base.$bright-blue, $alpha: 0.25);
+    margin-bottom: 1.5rem;
+  }
+
+  .payment:hover {
+    background-color: base.$desaturated-purple;
+    cursor: pointer;
+  }
+
+  .cancel {
+    color: base.$desaturated-blue;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .cancel:hover {
+    color: base.$dark-blue;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 375px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .card--details {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+}
