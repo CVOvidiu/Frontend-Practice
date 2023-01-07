@@ -39,7 +39,7 @@ img {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba($color: hsl(277, 55%, 30%), $alpha: 0.65);
+      background-color: rgba($color: hsl(277, 71%, 29%), $alpha: 0.65);
       top: 0;
     }
   }
@@ -86,7 +86,82 @@ img {
     }
 
     .comp:not(:last-child) {
-      margin: 2em;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  :root {
+    font-size: 1.15rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1440px;
+
+    .container {
+      width: 50%;
+
+      img {
+        content: url("../images/image-header-desktop.jpg");
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .card__content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 5.25em;
+
+      .title {
+        font-size: 2.25rem;
+        text-align: start;
+      }
+
+      .desc {
+        max-width: 450px;
+        text-align: start;
+        margin: 2em 0;
+        line-height: 2em;
+      }
+
+      .wrapper {
+        margin-top: auto;
+      }
+
+      .comps {
+        display: flex;
+        max-width: 500px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+
+        .comp {
+          text-align: left;
+          flex: 1 1 120px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) and (min-width: 375px) {
+  :root {
+    font-size: 0.7rem;
+  }
+
+  .card {
+    .card__content {
+      .comps {
+        max-width: 350px;
+        .comp {
+          flex: 1 1 70px;
+        }
+      }
     }
   }
 }
