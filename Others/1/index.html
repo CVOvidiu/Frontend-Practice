@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Tour</title>
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/left-sidebar.css">
+        <link rel="stylesheet" href="styles/right-sidebar.css">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <header>
+            <div class="flex-item" id="left-item">
+                <img src="img/logo.png" alt="" class="logo">
+            </div>
+            <div class="flex-item" id="middle-item">
+                <div class="flex-item" id="searchbar-wrapper">
+                    <div id="main-searchbar-img">
+                        <img src="img/search.png" alt="" style="width: 20px;">
+                    </div>
+                    <input type="text" placeholder="Search for places" id="main-searchbar">
+                </div>
+                <div id="toggle">
+                    <img src="img/toggle.jpg" alt="" style="width: 25px; filter: invert(100%);">
+                </div>
+            </div>
+            <div class="flex-item" id="right-item">
+                <div id="limit"></div>
+                <div class="flex-item">
+                    <div id="location">
+                        <img src="img/location.png" alt="" style="width: 20px; filter: contrast(10%);">
+                        <span>New York/DC</span>
+                    </div>
+                    <div id="notif">
+                        <img src="img/notifications.png" alt="" style="width: 25px; filter: contrast(10%);">
+                        <div id="notif-alert"></div>
+                    </div>
+                    <div id="profile-pic">
+                        <img src="img/pfp.png" alt="" style="width: 50px; border-radius: 50px;">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav id="left-sidebar">
+            <div id="top">
+                <div class="item">
+                    <img src="img/left-sidebar/home.png" alt="" class="logo">
+                    <span>Dashboard</span>
+                </div>
+                <div class="item">
+                    <div id="focus-cursor"></div>
+                    <img src="img/left-sidebar/notes.png" alt="" class="logo">
+                    <span style="margin-left: 30px;">Note's</span>
+                </div>
+                <div class="item">
+                    <img src="img/left-sidebar/home.png" alt="" class="logo">
+                    <span>Theme</span>
+                </div>
+                <div class="item">
+                    <img src="img/left-sidebar/notes.png" alt="" class="logo">
+                    <span>Account</span>
+                </div>
+                <div class="item">
+                    <img src="img/left-sidebar/home.png" alt="" class="logo">
+                    <span>Explore</span>
+                </div>
+                <div class="item">
+                    <img src="img/left-sidebar/notes.png" alt="" class="logo">
+                    <span>Graph</span>
+                </div>
+                <div class="item">
+                    <img src="img/left-sidebar/home.png" alt="" class="logo">
+                    <span>Messages</span>
+                </div>
+                <div class="item">
+                    <img src="img/left-sidebar/notes.png" alt="" class="logo">
+                    <span>Settings</span>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/left-sidebar/signout.png" alt="" class="logo">
+                <span>Sign Out</span>
+            </div>
+        </nav>
+        <nav id="right-sidebar">
+            <div id="easy-book">
+                <div class="img-wrapper">
+                    <img src="img/right-sidebar/1.jpg" alt="" style="width: 350px; height: 250px;
+                    object-fit: cover; border-radius: 30px;
+                    box-shadow: 10px 10px 20px rgba(30, 229, 255, 0.2);">
+                    <div id="favorite">
+                        <img src="img/heart.png" alt="" style="width: 30px; height: 30px;">
+                    </div>
+                </div>
+                <div id="desc-wrapper">
+                    <span id="title">Brazil Forest</span>
+                    <span id="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, mollitia.</span>
+                    <img src="img/badge.png" alt="" style="position: absolute; width: 25px; height: 25px; right: 25px; top: 0;">
+                </div>
+                <div id="button">
+                    <div id="price-wrapper">
+                        <span id="span">per/person</span>
+                        <span id="price">$1540</span>
+                    </div>
+                    <button>Book Travel</button>
+                </div>
+            </div>
+            <div id="favorites">
+                <div class="item">
+                    <img src="img/right-sidebar/1.jpg" alt="" style="width: 125px; height: 100px;
+                    object-fit: cover; border-radius: 20px;
+                    box-shadow: 10px 10px 20px rgba(30, 229, 255, 0.2);">
+                    <div id="desc">
+                        <span style="font-size: 20px; color: var(--primary)">Nature Lake</span>
+                        <div id="location">
+                            <img src="img/location.png" alt="" style="width:15px">
+                            <span style="margin-left: 5px;font-size: 13px;
+                            color: rgb(105, 105, 105);">Afghanistan</span>
+                        </div>
+                    </div>
+                    <img src="img/heart.png" alt="" style="width: 25px; position: absolute; right: 50px;">
+                </div>
+                <div class="item">
+                    <img src="img/right-sidebar/1.jpg" alt="" style="width: 125px; height: 100px;
+                    object-fit: cover; border-radius: 20px;
+                    box-shadow: 10px 10px 20px rgba(30, 229, 255, 0.2);">
+                    <div id="desc">
+                        <span style="font-size: 20px; color: var(--primary)">Nature Lake</span>
+                        <div id="location">
+                            <img src="img/location.png" alt="" style="width:15px">
+                            <span style="margin-left: 5px;font-size: 13px;
+                            color: rgb(105, 105, 105);">Afghanistan</span>
+                        </div>
+                    </div>
+                    <img src="img/heart.png" alt="" style="width: 25px; position: absolute; right: 50px;">
+                </div>
+                <div class="item">
+                    <img src="img/right-sidebar/1.jpg" alt="" style="width: 125px; height: 100px;
+                    object-fit: cover; border-radius: 20px;
+                    box-shadow: 10px 10px 20px rgba(30, 229, 255, 0.2);">
+                    <div id="desc">
+                        <span style="font-size: 20px; color: var(--primary)">Nature Lake</span>
+                        <div id="location">
+                            <img src="img/location.png" alt="" style="width:15px">
+                            <span style="margin-left: 5px;font-size: 13px;
+                            color: rgb(105, 105, 105);">Afghanistan</span>
+                        </div>
+                    </div>
+                    <img src="img/heart.png" alt="" style="width: 25px; position: absolute; right: 50px;">
+                </div>
+            </div>
+        </nav>
+        <main>
+            <span id="title">Discover World</span>
+            <div id="menu">
+                <span>Recommended</span>
+                <span>Popular Places</span>
+                <span>Trips</span>
+            </div>
+            <div id="carousel">
+                <div id="item">
+                    <div id="wrapper">
+                        <img src="img/right-sidebar/1.jpg" id="img-item" alt="">
+                        <div id="favorite">
+                            <img src="img/heart.png" alt="" style="width: 30px; height: 30px;">
+                        </div>
+                    </div>
+                    <span id="title">Moonlight Night</span>
+                    <div id="info">
+                        <img src="img/location.png" alt="">
+                        <span id="location">Canada</span>
+                        <img src="img/heart.png" alt="">
+                        <span id="rating">4.7</span>
+                    </div>
+                </div>
+                <div id="item">
+                    <div id="wrapper">
+                        <img src="img/right-sidebar/1.jpg" id="img-item" alt="">
+                        <div id="favorite">
+                            <img src="img/heart.png" alt="" style="width: 30px; height: 30px;">
+                        </div>
+                    </div>
+                    <span id="title">Moonlight Night</span>
+                    <div id="info">
+                        <img src="img/location.png" alt="">
+                        <span id="location">Canada</span>
+                        <img src="img/heart.png" alt="">
+                        <span id="rating">4.7</span>
+                    </div>
+                </div>
+                <div id="item">
+                    <div id="wrapper">
+                        <img src="img/right-sidebar/1.jpg" id="img-item" alt="">
+                        <div id="favorite">
+                            <img src="img/heart.png" alt="" style="width: 30px; height: 30px;">
+                        </div>
+                    </div>
+                    <span id="title">Moonlight Night</span>
+                    <div id="info">
+                        <img src="img/location.png" alt="">
+                        <span id="location">Canada</span>
+                        <img src="img/heart.png" alt="">
+                        <span id="rating">4.7</span>
+                    </div>
+                </div>
+                <div id="item">
+                    <div id="wrapper">
+                        <img src="img/right-sidebar/1.jpg" id="img-item" alt="">
+                        <div id="favorite">
+                            <img src="img/heart.png" alt="" style="width: 30px; height: 30px;">
+                        </div>
+                    </div>
+                    <span id="title">Moonlight Night</span>
+                    <div id="info">
+                        <img src="img/location.png" alt="">
+                        <span id="location">Canada</span>
+                        <img src="img/heart.png" alt="">
+                        <span id="rating">4.7</span>
+                    </div>
+                </div>
+            </div>
+            <div id="events">
+                <div id="wrapper">
+                    <span id="title">Event Dates</span>
+                    <div id="date">January 15-2022</div>
+                </div>
+                <div id="date-list">
+                    <div class="item" id="item-1">
+                        <span id="weekday">Mo</span>
+                        <span id="monthday">12</span>
+                    </div>
+                    <div class="item" id="item-2">
+                        <div id="active"></div>
+                        <span id="weekday" style="color: white; opacity: 1;">Tu</span>
+                        <span id="monthday" style="color: white;">13</span>
+                    </div>
+                    <div class="item" id="item-3">
+                        <span id="weekday">We</span>
+                        <span id="monthday">14</span>
+                    </div>
+                    <div class="item" id="item-4">
+                        <span id="weekday">Th</span>
+                        <span id="monthday">15</span>
+                    </div>
+                    <div class="item" id="item-5">
+                        <span id="weekday">Fr</span>
+                        <span id="monthday">16</span>
+                    </div>
+                    <div class="item" id="item-6">
+                        <span id="weekday">St</span>
+                        <span id="monthday">17</span>
+                    </div>
+                    <div class="item" id="item-7">
+                        <span id="weekday">Su</span>
+                        <span id="monthday">18</span>
+                    </div>
+                    <div class="item" id="item-8">
+                        <span id="weekday">Mo</span>
+                        <span id="monthday">19</span>
+                    </div>
+                    <div class="item item-9">
+                        <span id="weekday">Tu</span>
+                        <span id="monthday">20</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

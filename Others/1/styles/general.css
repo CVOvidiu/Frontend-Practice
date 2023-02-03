@@ -1,0 +1,14 @@
+:root {
+    --primary: rgb(0, 50, 50);
+    --navcolor: rgb(241, 251, 255);
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, Arial;
+}
+
+nav {
+    background-color: var(--navcolor);
+    position: fixed;
+}

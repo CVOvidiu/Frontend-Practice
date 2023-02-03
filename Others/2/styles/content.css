@@ -1,0 +1,47 @@
+body {
+    padding-bottom: 3000px;
+    margin: 0;
+    background-color: rgb(23, 23, 73);
+}
+
+.hero-landing {
+    height: 1200px;
+    background-image: url('../img/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    box-shadow: 0px -100px 75px 100px rgb(23, 23, 73);
+}
+
+.left {
+    width: 600px;
+    color: white;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.left .heading {
+    font-family: Roboto, Arial;
+}
+
+.about .right img {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+    object-position: 0% 50%;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+
+.right {
+    display: flex;
+}
